@@ -5,7 +5,6 @@ class Vista:
         self.master = master
         self.master.title("Biblioteca")
         
-        # Campos de entrada
         self.label_titulo = tk.Label(master, text='Título')
         self.label_titulo.pack(pady=5)
         self.entry_titulo = tk.Entry(master)
@@ -21,11 +20,9 @@ class Vista:
         self.entry_año = tk.Entry(master)
         self.entry_año.pack(pady=5)
         
-        # Listbox para mostrar registros
         self.listbox = tk.Listbox(master, width=50)
         self.listbox.pack(pady=5)
         
-        # Botones
         self.boton_guardar = tk.Button(master, text='Guardar')
         self.boton_guardar.pack(pady=5)
         
@@ -62,4 +59,4 @@ class Vista:
         return None
     
     def mostrar_error(self, mensaje):
-        print(f"Error: {mensaje}")  # En una aplicación real, podrías usar un messagebox
+        print(f"Error: {mensaje}")  

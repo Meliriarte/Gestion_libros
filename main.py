@@ -11,8 +11,7 @@ def main():
     controlador = Controlador(vista, modelo)
     
     root.mainloop()
-    
-    # Cerrar la conexión a la base de datos al salir
+
     modelo.cerrar_conexion()
 
 if __name__ == "__main__":

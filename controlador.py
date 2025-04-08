@@ -3,7 +3,6 @@ class Controlador:
         self.vista = vista
         self.modelo = modelo
         
-        # Configurar comandos de los botones
         self.vista.boton_guardar.config(command=self.guardar_libro)
         self.vista.boton_mostrar.config(command=self.mostrar_libros)
         self.vista.boton_actualizar.config(command=self.actualizar_libro)
